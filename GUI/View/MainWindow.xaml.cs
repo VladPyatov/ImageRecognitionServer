@@ -13,7 +13,7 @@ namespace View
         public MainWindow()
         {
             InitializeComponent();
-            Title = "Image Classifier. Pyatov Vladislav, 401 group.";
+            Title = "Image Classifier. Pyatov Vladislav.";
             DataContext = new ViewModel.ViewModel(new MyAppUIServices(this.Dispatcher));
 
         }

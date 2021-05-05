@@ -48,14 +48,9 @@ namespace SQL
     {
         public DbSet<ImageClass> ImageClasses { get; set; }
         public DbSet<ImageInfo> Images { get; set; }
-        //public LibraryContext()
-        //{
-        //    Database.EnsureCreated();
-        //}
+
         protected override void OnConfiguring(DbContextOptionsBuilder o)
-            => o.UseSqlite(@"Data Source=C:\Users\Владислав\Desktop\s02170669\Task_1\SQL\ImageDataBase.db");
+            => o.UseSqlite($"Data Source={Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName + "\\Backend\\SQL\\ImageDataBase.db"}");
     }
 
-    //o.UseSqlite($"Data Source={Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.FullName + "\\Task_1\\SQL\\ImageDataBase.db"}"
-    //$"Server=(localdb)\\MSSQLLocalDB;DataBase={Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.FullName + "\\Task_1\\SQL\\ImageDataBase"};Trusted_Connection=True; multipleactiveresultsets=True"
 }

@@ -89,12 +89,11 @@ namespace ImageServer.Database
 
         public List<ImageRepresentation> RecognizeImage(List<ImageRepresentation> Images)
         {
-            Model MnistModel = new Model(ModelPath: Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName + "\\Task_1\\RecognitionModel\\mnist-8.onnx");
+            Model MnistModel = new Model(ModelPath: Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName + "\\Backend\\RecognitionModel\\mnist-8.onnx");
 
             Parallelizer<ImageRepresentation, ImageRepresentation> ModelParallelizer = new Parallelizer<ImageRepresentation, ImageRepresentation>(MnistModel, UseServer:true);
             List<ImageRepresentation> result = ModelParallelizer.Run(Images);
 
-            Console.WriteLine(result[0].ClassName);
             return result;
         }
 

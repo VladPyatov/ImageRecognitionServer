@@ -203,7 +203,7 @@ namespace ViewModel
         public int Progress { get; set; }
         public bool IndeterminedPBar { get; set; } = false;
 
-        private static Model MnistRecognizer = new Model(ModelPath: Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.FullName + "\\Task_1\\RecognitionModel\\mnist-8.onnx");
+        private static Model MnistRecognizer = new Model(ModelPath: Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.Parent.Parent.FullName + "\\Backend\\RecognitionModel\\mnist-8.onnx");
 
         private static Parallelizer<ImageRepresentation,ImageRepresentation> ModelParallelizer = new Parallelizer<ImageRepresentation,ImageRepresentation>(MnistRecognizer);
 

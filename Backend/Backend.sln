@@ -9,9 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecognitionModel", "Recogni
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SQL", "SQL\SQL.csproj", "{ED9C8ED0-E5B4-4105-B786-171D7BE80DA7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageServer", "ImageServer\ImageServer.csproj", "{3DD66FEA-C077-4A20-9BB6-EDF23059E12E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageServer", "ImageServer\ImageServer.csproj", "{3DD66FEA-C077-4A20-9BB6-EDF23059E12E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageContracts", "ImageContracts\ImageContracts.csproj", "{43B3DC31-AFD5-477D-A90E-3CF263B0F4BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageContracts", "ImageContracts\ImageContracts.csproj", "{43B3DC31-AFD5-477D-A90E-3CF263B0F4BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
